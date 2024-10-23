@@ -1,0 +1,233 @@
+:root {
+  --color-body: #81076d;
+  --color-contenedor: #e05e4d;
+  --color-border: #5e0a74;
+  --color-letra: #660000;
+  --color-letter: #f1c092;
+  --font: "Indie Flower", cursive;
+}
+
+
+body {
+  background-color: var(--color-body);
+  margin: auto;
+  max-width: 1200px;
+  height: 100vh;
+  font-family: var(--font);
+  font-weight: 600;
+  letter-spacing: 2px;
+
+  & .contenedor {
+    background-color: var(--color-contenedor);
+    margin: 5%;
+    text-align: center;
+    color: var(--color-letra);
+    border: 5px double var(--color-border);
+
+  }
+
+  & #title {
+    /*todos a la mesa*/
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: -20px;
+    font-size: 3em;
+    text-shadow: 2px 2px 15px #73068f;
+  }
+
+  /*comida para llevar*/
+  & h4 {
+    text-align: center;
+    margin-bottom: 2%;
+    /* text-shadow: 2px 2px 15px #73068f; */
+  }
+
+  & #description {
+    /*ayudanos, queremos conocer tus gustos*/
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 25px;
+    /* text-shadow: 2px 2px 15px #73068f; */
+  }
+
+  & .container-1 input {
+    /*inputs de los datos*/
+    background-color: var(--color-letter);
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid var(--color-letra);
+    margin-bottom: 5px;
+    width: 65%;
+    height: 30px;
+    font-family: var(--font);
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: var(--color-letra);
+    box-shadow: 4px 5px 15px #73068f;
+  }
+
+  & input:focus {
+    /*focus sobre los inputs datos*/
+    border: 2px solid var(--color-letra);
+  }
+
+  & input::placeholder {
+    /*placeholder de los input datos*/
+    color: var(--color-letra);
+    font-family: var(--font);
+    font-weight: 600;
+  }
+
+  & #name-label,
+  #email-label,
+  #number-label {
+    /*los label de todos los inputs de datos*/
+    display: block;
+    text-align: left;
+    margin-left: 17%;
+
+  }
+
+  & .sueles-co {
+    /*parrafo*/
+    padding-top: 20px;
+    margin-right: 40px;
+    display: inline-block;
+    margin-bottom: 0;
+  }
+
+  /* RADIOS */
+  & .container-2 input {
+    display: none;
+  }
+
+  & .container-2 label:hover {
+    cursor: pointer;
+  }
+
+  & .container-2 label {
+    background: url(radio_unchecked.png) no-repeat left center;
+    padding: 20px;
+    background-size: 20px;
+  }
+
+  & .container-2 input:checked+label {
+    background-image: url(radio_checked.png);
+  }
+
+  & #dropdown {
+    /*selector*/
+    margin-left: 40px;
+    font-family: var(--font);
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: var(--color-letra);
+    background-color: var(--color-letter);
+    font-size: 12px;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 4px 5px 15px #73068f;
+  }
+
+  & #dropdown option {
+    font-family: var(--font);
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: var(--color-letra);
+  }
+
+  /*estilos parrafo*/
+  & .p-1 {
+    padding: 10px;
+    margin-bottom: 10px;
+    margin: 0;
+    margin-top: 40px;
+  }
+
+  & .description {
+    font-size: 0.85rem;
+    color: var(--color-letter);
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  /*borro los checkbox*/
+  & .box-comida input,
+  .box-recetas input {
+    display: none;
+  }
+
+  /*hover pointer al label de checkbox-comida-tipo y recetas*/
+  & .box-comida label:hover,
+  .box-recetas label:hover {
+    cursor: pointer;
+  }
+
+  & .box-comida,
+  .box-recetas {
+    padding-top: 15px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+
+    & label {
+      margin: 10px;
+    }
+  }
+
+  & .box-comida span,
+  .box-recetas span {
+    color: var(--color-letter);
+  }
+
+  /*aplico filtro sepia img not checked*/
+  & .box-comida input:checked+label span,
+  .box-recetas input:checked+label span {
+    background-color: var(--color-body);
+    border-radius: 50%;
+  }
+
+  & .sugerencia {
+    margin-top: 40px;
+  }
+
+  & #sugerencias {
+    /*textarea*/
+    background-color: var(--color-letter);
+    border-style: solid;
+    border-radius: 5px;
+    border-color: var(--color-letra);
+    outline: none;
+    box-shadow: 4px 5px 15px #73068f;
+  }
+
+  & #sugerencias {
+    /*focus sobre el textarea*/
+    border: 2px solid var(--color-letra);
+    outline: none;
+    font-family: var(--font);
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: var(--color-letra);
+  }
+
+  & [type="submit"] {
+    /*boton de enviar*/
+    margin-top: 20px;
+    border-radius: 5px;
+    width: 170px;
+    height: 50px;
+    background-color: var(--color-letter);
+    border: 1px solid var(--color-letra);
+    font-family: var(--font);
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: var(--color-letra);
+    box-shadow: 4px 5px 15px #73068f;
+  }
+
+  & [type="submit"]:focus {
+    border: 2px solid var(--color-letra);
+  }
+}
+

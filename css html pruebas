@@ -1,0 +1,124 @@
+:root {
+  --color-body: #cf8733;
+  --color-contenedor: #e79e50;
+  --color-border: #f29325;
+  --color-letra: #660000;
+  --color-letter: #fdc38c;
+}
+
+body {
+  background-color: var(--color-body);
+  margin: 0;
+  height: 100vh;
+}
+
+h4 {
+  /*comida para llevar*/
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.contenedor {
+  
+  background-color: var(--color-contenedor);
+  margin: 5%;
+  font-family: "Lucida handwriting";
+  text-align: center;
+  color: var(--color-letra);
+  border: 10px double var(--color-border);
+}
+
+.sueles-co { /*parrafo*/
+  padding-top: 20px;
+  margin-right: 40px;
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.container-1 input { /*inputs de los datos*/
+  background-color: var(--color-contenedor);
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid var(--color-letra);
+  margin-bottom: 5px;
+  width: 65%;
+  height: 30px;
+}
+
+.base {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+#radio-si,
+  #radio-no { /*input botoncito de radio*/
+    accent-color: var(--color-letra);
+    font-size: 12px;
+  }
+
+#title { /*todos a la mesa*/
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: -20px;
+}
+
+#description { /*ayudanos, queremos conocer tus gustos*/
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+#sugerencias { /*textarea*/
+  background-color: var(--color-letter);
+  border-style: solid;
+  border-radius: 5px;
+  border-color: var(--color-letra);
+  outline: none;
+}
+
+#dropdown { /*selector*/
+  margin-left: 40px;
+  font-family: "Lucida handwriting";
+  background-color: var(--color-letter);
+  font-size: 12px;
+}
+
+
+
+  [for="name-label"],
+  [for="email-label"],
+  [for="number-label"] { /*los label de todos los inputs de datos*/
+  display: block;
+  text-align: left;
+  margin-left: 17%;
+  }
+
+  [type="checkbox"] { /*color de los check*/
+    accent-color: var(--color-letra);
+  }
+
+  [type="submit"] { /*boton de enviar*/
+    margin-top: 20px;
+    border-radius: 5px;
+    width: 170px;
+    height: 50px;
+    background-color: var(--color-letter);
+    border: 1px solid var(--color-letra);
+  }
+
+  input::placeholder { /*placeholder de los input datos*/
+    color: var(--color-letter);
+    font-family: "Lucida handwriting";
+  }
+  
+  input:focus { /*focus sobre los inputs datos*/
+    border: 2px solid var(--color-letra);
+  }
+  
+  #sugerencias:focus { /*focus sobre el textarea*/
+    border: 2px solid var(--color-letra);
+    outline: none;
+  }
+  
+  [type="submit"]:focus {
+    border: 2px solid var(--color-letra);
+  }

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="encuesta-2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <!-- link de los iconos de tenedores google fonts -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Todos a la mesa!</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <!--titulo-->
+        <h1 id="title">Todos a la mesa!</h1>
+        <h4>Comida para llevar</h4>
+        <!--descripcion corta con p-->
+        <p id="description">Ayúdanos, queremos conocer tus gustos!</p>
+
+
+
+        <!--form con label e inputs-->
+        <form id="survey-form">
+
+            <div class="container-1">
+                <label for="name" id="name-label">Nombre</label>
+                <input id="name" type="text" placeholder="Cúal es tu nombre?" required name="" />
+                <label for="email" id="email-label">Tu email</label>
+                <input id="email" type="email" placeholder="Introduce tu email" required name="" />
+                <label for="number" id="number-label">Edad</label>
+                <input id="number" type="number" pattern="[0-9]{2,}" min="18" max="100"
+                    placeholder="Dinos tu edad, por favor" required name="" />
+                <br>
+            </div>
+
+            <!--radios-->
+            <div class="container-2">
+
+                <p class="sueles-co">Sueles cocinar?</p>
+                <input id="radio-no" type="radio" name="cocino" value="no" />
+                <label for="radio-no">no</label>
+                <input id="radio-si" type="radio" name="cocino" value="si" />
+                <label for="radio-si">si</label>
+                
+                
+            </div>
+            <br>
+
+            <!--dropdown - desplegable-->
+            <label for="into" class="base">Tienes alguna intolerancia?
+                <select id="dropdown">
+                    <option value="seleccion">Selecciona</option>
+                    <option value="lactosa">Lactosa</option>
+                    <option value="gluten">Gluten</option>
+                    <option value="fructuosa">Fructuosa</option>
+                    <option value="sacarosa">Sacarosa</option>
+                    <option value="histamina">Histamina</option>
+                </select>
+            </label>
+            <br>
+
+            <!--checkbox-->
+            <p class="p-1 text-comida">Qué tipo de comida prefieres?</p>
+            <p class="description">(Haz click en alguna de ellas...o en todas!)</p>
+
+            <div class="box-comida">
+                <input id="vegano" type="checkbox" value="vegano" name="">
+
+                <label for="vegano" id="label-base">
+                    <span class="material-symbols-outlined">
+                        restaurant
+                    </span>
+                    Vegana
+                </label>
+                <input id="vegetariano" type="checkbox" value="vegetariano" name="">
+                <label for="vegetariano" id="label-base">
+                    <span class="material-symbols-outlined">
+                        restaurant
+                    </span>
+                    Vegetariana
+                </label>
+                <input id="omnivoro" type="checkbox" value="omnivoro" name="">
+                <label for="omnivoro" id="label-base">
+                    <span class="material-symbols-outlined">
+                        restaurant
+                    </span>
+                    Omnívora
+                </label>
+            </div>
+            <br>
+            <br>
+            <!--checkbox-->
+            <p class="p-1 text-recetas">Qué tipo de recetas te gustaría recibir?</p>
+            <p class="description">(Haz click en alguna de ellas...o en todas!)</p>
+
+            <div class="box-recetas">
+                <input type="checkbox" name="receta-ensalada" id="ensaladas" value="si" />
+                <label for="ensaladas">
+                    <span class="material-symbols-outlined">
+                        restaurant
+                    </span>
+                    Ensalas</label>
+                <input type="checkbox" name="receta-carne" id="carnes" value="si" />
+                <label for="carnes">
+                    <span class="material-symbols-outlined">
+                        restaurant
+                    </span>
+                    Carnes</label>
+                <input type="checkbox" name="receta-pescado" id="pescados" value="si" />
+                <label for="pescados">
+                    <span class="material-symbols-outlined">
+                        restaurant
+                    </span>
+                    Pescados</label>
+                <input type="checkbox" name="receta-postre" id="postres" value="si" />
+                <label for="postres">
+                    <span class="material-symbols-outlined">
+                        restaurant
+                    </span>
+                    Postres</label>
+            </div>
+            <br>
+            <br>
+
+
+            <!--TextArea-->
+            <p class="sugerencia">Alguna sugerencia? </p>
+            <textarea id="sugerencias" rows="5" cols="50"></textarea>
+            <h5 class="base">Gracias! Encantados de conocerte!
+                <br>
+
+                <!--Submit-->
+
+                <input type="submit" id="submit" value="Enviar" />
+        </form>
+    </div>
+</body>
+
+</html>
