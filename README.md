@@ -1,4 +1,4 @@
-![](/Todos%20a%20la%20mesa!.png)
+![](assets/preview.png)
 # Proyecto de aprendizaje
 ### HTML - CSS
 ###### Manejo de etiquetas comunes, orientadas al uso de formularios
